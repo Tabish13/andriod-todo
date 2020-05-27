@@ -5,4 +5,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AddTodo" />
+    tools:context=".AddTodo">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/background_shadow"
+        android:hint="Type your title here..."
+        android:padding="8dp"
+        android:textSize="24sp" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/tasktext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Add your Task..."
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:padding="8dp"
+            android:background="#FFFFFF"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:padding="8dp"
+            android:layout_marginRight="10dp"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

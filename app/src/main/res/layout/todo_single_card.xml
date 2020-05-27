@@ -4,8 +4,10 @@
     android:id="@+id/todo_card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="5dp"
     android:clickable="true"
     android:descendantFocusability="beforeDescendants"
+    android:background="@drawable/background_shadow"
     android:focusable="auto"
     android:orientation="vertical"
     android:padding="8dp">
