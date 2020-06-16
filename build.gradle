@@ -17,9 +17,15 @@ buildscript {
 
 allprojects {
     repositories {
+        maven {
+            url "https://artifactory.hellohaptik.com/artifactory/libs-release-local"
+            credentials {
+                username "haptik"
+                password "t2.Lcd<%mTabuR8"
+            }
+        }
         google()
         jcenter()
-        
     }
 }
 

@@ -6,14 +6,12 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
@@ -114,6 +112,10 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             Intent addTodo = new Intent(this, AddTodo.class);
             startActivity(addTodo);
+            return true;
+        }else if (id == R.id.haptik_action_chat){
+            HaptikSdkChatOpen haptikSdkChatOpen = new HaptikSdkChatOpen();
+            haptikSdkChatOpen.initializeChat(MainActivity.this, getApplication());
             return true;
         }
 
